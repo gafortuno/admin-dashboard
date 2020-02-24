@@ -83,10 +83,78 @@ header {
   cursor: pointer;
 }
 
-.account-navigation-visible {
+.account-navigation-visible,
+.settings-navigation-visible {
   display: block;
 }
 
-.account-navigation-hidden {
+.account-navigation-hidden,
+.settings-navigation-hidden {
   display: none;
+}
+
+#settingsNavigation {
+  width: 70%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background: #FFFFFF;
+  top: 0;
+  overflow: auto;
+}
+
+.settings-header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffc61b;
+  color: #FFFFFF;
+}
+
+.account-profile {
+  padding: 10px;
+  text-align: center;
+}
+
+.account-profile img {
+  width: 50%;
+  height: 50%;
+}
+
+.account-information .position {
+  font-size: 12px;
+}
+
+.basic-settings {
+  padding: 20px 10px;
+  font-size: 16px;
+  border-top: 1px solid rgba(128, 128, 128, 0.1);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.settings-checklist {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.settings-checklist .checked {
+  color: #66b366;
+}
+
+.settings-checklist .crossed-out {
+  color: #ff7171;
+}
+
+.checklist-item span {
+  margin-right: 10px;
+}
+
+.checklist-item {
+  padding: 15px 0;
+}
+
+.close-settings,
+.settings-cog {
+  cursor: pointer;
 }

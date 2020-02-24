@@ -32,7 +32,32 @@ function AppHeader() {
             </div>
           </div>
         </div>
-        <i className="fas fa-cog item" />
+        <div className="settings-navigation">
+          <i className="fas fa-cog item settings-cog" onClick={() => showSettingsNav()} />
+          <div id="settingsNavigation" className="settings-navigation-hidden">
+            <div className="settings-header">
+              <span>Settings</span>
+              <i className="far fa-times-circle close-settings" onClick={() => closeSettingsNav()}></i>
+            </div>
+            <div className="account-profile">
+              <img src={require('../assets/images/display_pic.jpg')} />
+              <div className="account-information">
+                <div className="name">Gio Adrian Fortuno</div>
+                <div className="position">Web Admin</div>
+              </div>
+            </div>
+            <div className="basic-settings">
+              Basic Settings
+            </div>
+            <div className="settings-checklist">
+              <div className="checklist-item"><span className="checked">✔</span> Notifications</div>
+              <div className="checklist-item"><span className="checked">✔</span> API Access</div>
+              <div className="checklist-item"><span className="crossed-out">🗙</span> Auto Updates</div>
+              <div className="checklist-item"><span className="checked">✔</span> Online Status</div>
+              <div className="checklist-item"><span className="checked">✔</span> Auto Payout</div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
   );
@@ -55,6 +80,30 @@ function showAccountNavigation() {
     accountNav.classList.remove(visible);
     accountNav.classList.add(hidden);
   }
+}
+
+/**
+ * Close settings navigation.
+ * @TODO Refactor.
+ * @TODO Add animation.
+ */
+function closeSettingsNav() {
+  document.getElementById('settingsNavigation')
+    .classList.add('settings-navigation-hidden');
+    document.getElementById('settingsNavigation')
+    .classList.remove('settings-navigation-visible');
+}
+
+/**
+ * Close settings navigation.
+ * @TODO Refactor.
+ * @TODO Add animation.
+ */
+function showSettingsNav() {
+  document.getElementById('settingsNavigation')
+    .classList.remove('settings-navigation-hidden');
+    document.getElementById('settingsNavigation')
+    .classList.add('settings-navigation-visible');
 }
 
 export default AppHeader;
