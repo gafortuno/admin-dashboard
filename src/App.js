@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <div className="logo">
+          <img src={require('./assets/images/logo.png')} />
+        </div>
+        <nav className="main-navigation">
+          <i className="fas fa-bars item"></i>
+          <i className="far fa-bell item">
+          <span className="notification-count">8</span>
+          </i>
+          <img className="item" src={require('./assets/images/display_pic.jpg')} />
+          <i className="fas fa-cog item"></i>
+        </nav>
       </header>
+      <main>
+      </main>
     </div>
   );
 }
