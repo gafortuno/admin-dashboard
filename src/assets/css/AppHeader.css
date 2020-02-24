@@ -56,3 +56,37 @@ header {
   font-size: 10px;
   font-family: 'Montserrat', 'Open Sans', 'Noto Sans';
 }
+
+#accountNavigation {
+  position: fixed;
+  top: 70px;
+  background-color: #FFFFFF;
+  width: auto;
+  padding: 20px;
+  box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+  color: #808080;
+  font-size: 12px;
+  right: 25%;
+}
+
+#accountNavigation .account-item {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.account-item i {
+  margin-right: 20px;
+}
+
+.account-nav img {
+  cursor: pointer;
+}
+
+.account-navigation-visible {
+  display: block;
+}
+
+.account-navigation-hidden {
+  display: none;
+}
