@@ -38,6 +38,11 @@ function AppHeader() {
   );
 }
 
+/**
+ * Show account navigation.
+ * @TODO Close on outside click.
+ * @TODO Add animation.
+ */
 function showAccountNavigation() {
   const accountNav = document.getElementById('accountNavigation');
   const hidden = 'account-navigation-hidden';
