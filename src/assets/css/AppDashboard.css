@@ -1,0 +1,54 @@
+.dashboard-widget {
+  padding: 20px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-widget i {
+  font-size: 20px;
+  color: #1ABC9C;
+  border: 1px solid #1ABC9C;
+  background-color: rgba(26, 188, 156, 0.2);
+  border-radius: 50%;
+  padding: 16px 16px;
+}
+
+.widget-data .amount {
+  font-size: 20px;
+}
+
+.title {
+  margin: 15px 0 25px;
+  font-size: 24px;
+}
+
+.widget-data .type {
+  color: #B4B4B4;
+}
+
+.widget-data .amount,
+.widget-data .type {
+  text-align: right;
+}
+
+.total-revenue i {
+  color: #6658DD;
+  border: 1px solid #6658DD;
+  background-color: rgba(102, 88, 221, 0.2);
+}
+
+.conversion i {
+  color: #4fc6e1;
+  border: 1px solid #4fc6e1;
+  background-color: rgba(79, 198, 225, 0.2);
+}
+
+.visits i {
+  color: #f7b84b;
+  border: 1px solid #f7b84b;
+  background-color: rgba(247, 184, 75, 0.2);
+}
