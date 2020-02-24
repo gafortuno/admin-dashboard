@@ -52,7 +52,7 @@ function AppHeader() {
             <div className="settings-checklist">
               <div className="checklist-item"><span className="checked">✔</span> Notifications</div>
               <div className="checklist-item"><span className="checked">✔</span> API Access</div>
-              <div className="checklist-item"><span className="crossed-out">🗙</span> Auto Updates</div>
+              <div className="checklist-item"><span className="crossed-out">✘</span> Auto Updates</div>
               <div className="checklist-item"><span className="checked">✔</span> Online Status</div>
               <div className="checklist-item"><span className="checked">✔</span> Auto Payout</div>
             </div>
